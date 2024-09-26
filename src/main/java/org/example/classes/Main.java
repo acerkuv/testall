@@ -7,6 +7,9 @@ public class Main {
         Robot robot = new Robot();
         robot.setModel("Verter");
 
+        //Вывод модели
+        out.println("Моя модель  " + robot.getModel());
+
         //Специальное представление через "--" 3 раза
         out.println("Спецальный вывод имени "  + robot.getSpecialModel());
 
