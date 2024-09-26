@@ -23,6 +23,7 @@ public class Robot {
         this.names = names;
     }
 
+    //Специальное представление через "--" 3 разаs
     public String getSpecialModel(){
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < 3 ; i++) {
@@ -32,11 +33,15 @@ public class Robot {
         }
         return stringBuilder.toString();
     }
+
+    //Сортировка имен с окончанием на "a"
     public List sortNames(){
         List<String> a = new ArrayList<String>();
         for (String s: this.names) if(s.endsWith("a")) a.add(s);
         return a;
     }
+
+    //Подпись заглавными
     public String robotSign(){
         return this.model.toUpperCase();
     }
