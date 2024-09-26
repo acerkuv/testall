@@ -2,7 +2,7 @@ package org.example.classes;
 
 import static java.lang.System.out;
 
-public class MyClass {
+public class Main {
     public static void main(String[] args){
         Robot robot = new Robot();
 
