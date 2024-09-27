@@ -69,7 +69,8 @@ public class Robot implements Behavior {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i: this.trace.keySet()){
             stringBuilder.append(Integer.toString(i))
-                    .append("-").append(Arrays.toString(this.trace.get(i)));
+                    .append("-").append(Arrays.toString(this.trace.get(i)))
+                    .append(", ");
         }
         return stringBuilder.toString();
 
