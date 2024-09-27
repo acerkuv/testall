@@ -35,17 +35,21 @@ public class Robot implements Behavior {
             иначе сообщи - на какомшаге ты был здесь ранее
          */
         if (!isIntersection()) saveTrace();
-        else System.out.println("Я споткнулся на " + this.steps +
-                " шаге, потому что  я уже тут был! на  " + this.firstStepTillCollision
-                 + " шаге ранее !");
+        else {
+            saveTrace();
+            System.out.println("Я споткнулся на " + this.steps +
+                    " шаге, потому что  я уже тут был! на  " + this.firstStepTillCollision
+                    + " шаге ранее !");
+        }
 
 
     }
     //Сохранение координат поде очередног шага
     private void saveTrace(){
+        this.steps++;
         int[] temp =new int[] {this.x, this.y};
         trace.put(this.steps, temp);
-        this.steps++;
+
     }
 
 
