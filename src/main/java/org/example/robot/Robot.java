@@ -36,7 +36,8 @@ public class Robot implements Behavior {
          */
         if (!isIntersection()) saveTrace();
         else System.out.println("Я споткнулся на " + this.steps +
-                ", потому чо  я уже тут был! на  " + this.firstStepTillCollision + " шаге");
+                " шаге, потому что  я уже тут был! на  " + this.firstStepTillCollision
+                 + " шаге ранее !");
 
 
     }
