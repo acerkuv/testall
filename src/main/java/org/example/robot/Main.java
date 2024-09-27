@@ -9,11 +9,12 @@ public class Main {
         // Шагай до тех пор, пока не наступишь на свой след
         robot.move(Step.UP);
         robot.move(Step.RIGHT);
+        robot.move(Step.RIGHT);
         robot.move(Step.DOWN);
         robot.move(Step.LEFT);
         robot.move(Step.UP);
 
         //Вывод координат всего пути
-        System.out.println("Я перемещался по этим координатам" + robot.readTrace());
+        System.out.println("Я перемещался по этим координатам " + robot.readTrace());
     }
 }

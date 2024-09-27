@@ -21,3 +21,4 @@ public class Main {
         out.println("Вывод имени заглаными: " + robot.robotSign());
     }
 }
+
